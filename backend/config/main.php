@@ -33,14 +33,6 @@ return [
         'request' => [
             'baseUrl' => '/yii2/admin',
         ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules'=>[
-                // 'admin' => 'admin',
-                // '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-            ],
-        ],
     ],
     'params' => $params,
 ];

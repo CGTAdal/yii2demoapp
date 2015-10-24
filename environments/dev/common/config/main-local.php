@@ -1,11 +1,21 @@
 <?php
 return [
+    'controllerMap' => [
+        'migrate' => [
+            // 'class' => 'yii\console\controllers\MigrateController',
+            // 'templateFile' => '@yii/views/migration.php',
+            'migrationTable' => 'pro_migration',
+            'migrationPath' => 'migrations',
+            'db' => 'appdb',
+            'interactive' => true
+        ],
+    ],
     'components' => [
-        'db' => [
+        'appdb' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=192.168.1.173;dbname=yii2advanced_dev',
+            'username' => 'admin',
+            'password' => 'admin',
             'charset' => 'utf8',
         ],
         'mailer' => [

@@ -31,11 +31,7 @@ return [
         ],
         'request' => [
             'baseUrl' => '/yii2',
-        ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-        ],
+        ]
     ],
     'params' => $params,
 ];
